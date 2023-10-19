@@ -35,3 +35,7 @@ a {
   border: none;
   /* font-family: 'Courier New', Courier, monospace; */
 }
+
+.undecor:hover {
+  background-color: #cdffd8;
+}
