@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="rounded m-5 col-9" id="main">
+          <nav class="navbar navbar-expand-sm m-3 my-2">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)"
+                ><img
+                  src="N.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                />&ensp;NEWSTIFY</a
+              >
+              <div class="justify-content-end">
+                <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <button class="btn btn-primary m-1" type="button">
+                        Login
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn btn-primary m-1" type="button">
+                        Sign Up
+                      </button>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input
+                      class="form-control me-2"
+                      type="text"
+                      placeholder="Search"
+                    />
+                    <button class="btn btn-primary" type="button">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <ul class="nav nav-underline nav-justified my-1 mx-5">
+            <li class="nav-item">
+              <a class="nav-link active" href="#main">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trend">TRENDING NOW!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">LATEST NEWS & ARTICLES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WRITE YOURS</a>
+            </li>
+          </ul>
+          <!-- HOME -->
+          <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#home"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#home"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#home"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="container-sm">
+              <div class="carousel-inner">
+                <div class="carousel-item active px-3 py-2">
+                  <img
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8F44/production/_131467663_yunchanlim-jameshole.jpg.webp"
+                    alt="Piano"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption bg-black opacity-75">
+                    <a
+                      href="https://www.bbc.com/news/entertainment-arts-67145961"
+                      target="_blank"
+                    >
+                      <h3>Yunchan: 19 yo Piano Sensation Signs Record Deal</h3>
+                      <p>
+                        Yunchan Lim, once called "classical music's answer to
+                        K-pop", signs to the UK's Decca Records
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item px-3 py-2">
+                  <img
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/4E3B/production/_131472002_178-251523-002.jpg.webp"
+                    alt="Arrested"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption py-2 bg-black opacity-75">
+                    <a
+                      href="https://www.bbc.com/news/world-europe-67155928"
+                      target="_blank"
+                    >
+                      <h3>'Mannequin' Arrested After Warsaw Shop Burglary</h3>
+                      <p>
+                        Police arrest 22-year-old who is accused of posing in a
+                        shop window before taking jewellery
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item px-3 py-2">
+                  <img
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/B2AF/production/_131334754_gettyimages-1648458189.jpg.webp"
+                    alt="Cars"
+                    class="d-block"
+                    style="width: 100%"
+                  />
+                  <div class="carousel-caption bg-black opacity-75">
+                    <a
+                      href="https://www.bbc.com/news/business-66737524"
+                      target="_blank"
+                      ><h3>The Top Electric Car Maker That is not Tesla</h3>
+                      <p>
+                        China's BYD is now ahead of Tesla in quarterly
+                        production and second in global states
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#home"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#home"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <!-- TRENDING -->
+          <div class="row m-2 my-4">
+            <h2 class="mx-2 text-danger" id="trend">TRENDING NOW!</h2>
+            <div class="card m-4 my-2" style="width: 30%">
+              <img
+                class="card-img-top rounded my-3"
+                src="https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/3653/production/_131470931_stewards_getty.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <a
+                href="https://www.bbc.com/sport/rugby-union/67154379"
+                target="_blank"
+              >
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Steward, Marler & Martin in for England Semi-final
+                  </h4>
+                  <p class="card-text">
+                    Freddie Steward, Joe Marler and George Martin come into the
+                    England side to take on South Africa in the Rugby World Cup
+                    semi-final on Saturday.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+              </a>
+            </div>
+            <div class="card my-2" style="width: 30%">
+              <img
+                class="card-img-top rounded my-3"
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/7914/production/_131469903_girllightened.jpg.webp"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <a
+                href="https://www.bbc.com/news/world-middle-east-67147059"
+                target="_blank"
+              >
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Panic and Confusion at Scene of Gaza Hospital Blast
+                  </h4>
+                  <p class="card-text">
+                    Palestinian health officials now say that at least 471
+                    people were killed by an explosion at a hospital in Gaza
+                    City on Tuesday night.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+              </a>
+            </div>
+
+            <div class="card m-4 my-2" style="width: 30%">
+              <img
+                class="card-img-top rounded my-3"
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2337/production/_131451090_crthecrown_season6_firstlook3-2.jpg.webp"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <a
+                href="https://www.bbc.com/news/entertainment-arts-67132151"
+                target="_blank"
+              >
+                <div class="card-body">
+                  <h4 class="card-title">
+                    The Crown: Diana and Dodi Storyline Teased by Netflix in
+                    Season Six Pictures
+                  </h4>
+                  <p class="card-text">
+                    Princess Diana's relationship with Dodi Fayed is one of the
+                    storylines Netflix has teased in a series of images ahead of
+                    the show's sixth season.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- LATEST NEWS -->
+          <div class="row m-3">
+            <h2 class="mx-2" id="news">LATEST NEWS & ARTICLES</h2>
+            <div class="col-md-6 px-3">
+              <div
+                class="bg-light row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary"
+                    >Culture</strong
+                  >
+                  <h3 class="mb-0">The Dark History Behind Scorsese's Epic</h3>
+                  <div class="mb-1 text-muted">Oct 19</div>
+                  <p class="card-text mb-auto">
+                    "They won't remember", Robert De Niro's character says in
+                    Martin Scorsese's Killers of the Flower Moon."
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.bbc.com/culture/article/20231018-killers-of-the-flower-moon-how-the-shocking-osage-murders-were-nearly-erased-from-us-history"
+                    class="stretched-link"
+                  >
+                    Continue reading
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 px-4">
+              <div
+                class="bg-light row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary"
+                    >Work Life</strong
+                  >
+                  <h3 class="mb-0">How Influencer Generate Big Revenue</h3>
+                  <div class="mb-1 text-muted">Oct 19</div>
+                  <p class="card-text mb-auto">
+                    Once a niche marketing strategy, teaming up with social
+                    media stars is the only way for brands to get ahead now.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.bbc.com/worklife/article/20231013-are-influencer-partnerships-the-inevitable-future-of-business"
+                    class="stretched-link"
+                  >
+                    Continue reading
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FORM -->
+          <div class="container mb-4">
+            <h2 class="mx-4">OPINION</h2>
+            <form name="com" method="POST" onsubmit="return basicValidation()">
+              <div class="m-4 mt-2">
+                <label for="comment">Comments:</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="comment"
+                  name="text"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mx-4">Submit</button>
+              <button type="" class="btn btn-primary mx-2">
+                WRITE YOUR ARTICLE
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="col-2">
+          <div class="rounded my-5" id="main">
+            <h5 class="text-center pt-3">
+              CATEGORY
+              <hr />
+            </h5>
+            <p>
+              <a href="#"><button class="undecor">POLITICS</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">WORK LIFE</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">SPORT</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">ENTERTAINMENT</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">WEATHER</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">COOKING</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor">LIFESTYLE</button></a>
+            </p>
+            <p>
+              <a href="#"><button class="undecor mb-3">CULTURE</button></a>
+            </p>
+          </div>
+
+          <div class="rounded my-5 pb-3" id="main">
+            <h5 class="text-center pt-3">
+              ADVERTISEMENT
+              <hr />
+            </h5>
+            <div class="card m-4 my-2" style="width: 80%">
+              <a
+                href="https://study.com/learn/lesson/product-advertisement-overview-examples.html"
+                target="_blank"
+              >
+                <img
+                  class="card-img-top rounded"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25PnSxxOW1-8_zK1Yg0r4xsRf49nQXIeBFDdbHiYcuR6hxZqsUK9I7vrVlws9yWHLFRI&usqp=CAU"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="rounded my-5 pb-3" id="main">
+            <h5 class="text-center pt-3">
+              EVENT
+              <hr />
+            </h5>
+            <div class="card m-4 my-2" style="width: 80%">
+              <a href="https://www.fifa.com/fifaplus/id" target="_blank">
+                <img
+                  class="card-img-top rounded"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNm2152rxnfEO1cPplpM_Z9m8zcdEYTqjvwN7Y-QAJsne_3iKSXBSUav7j7V9uuzuvYWc&usqp=CAU"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="rounded my-5 pb-3" id="main">
+            <h5 class="text-center pt-3">
+              HIRING
+              <hr />
+            </h5>
+            <div class="card m-4 my-2" style="width: 80%">
+              <a
+                href="https://klikjon.com/contoh-iklan-lowongan-pekerjaan-bahasa-inggris/"
+                target="_blank"
+              >
+                <img
+                  class="card-img-top rounded"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRmBLFYcbL3iaLN2QV3uTjCdTHikAnAZ1Mw7Coo8aCt8UJH0AAjJduxoGrV24xOUoVeY&usqp=CAU"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="rounded my-5 py-2" id="main">
+            <h5 class="text-center">&copy; Fatiya Izzati 2023</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
